@@ -14,3 +14,16 @@ function nowServing(line) {
     return `Currently serving ${line.shift()}.`
   }
 }
+
+function currentLine(line){
+  if (line.length === 0){
+    return 'The line is currently empty.'
+  } else {
+    st = 'The line is currently:'
+    do {
+      st += ` ${i + 1}. ${name},`
+    } while (i < line.length)
+    st -= ','
+    return st
+  }
+}
