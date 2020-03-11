@@ -10,6 +10,7 @@ function nowServing(line) {
   if (line.length === 0) {
     return 'There is nobody waiting to be served!'
   } else {
-    return `Currently serving ${line[0]}.`, line.shift()
+    console.log(`Currently serving ${line[0]}.`)
+    return line.shift()
   }
 }
