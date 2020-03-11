@@ -20,8 +20,10 @@ function currentLine(line){
     return 'The line is currently empty.'
   } else {
     st = 'The line is currently:'
+    let i = 1
     do {
       st += ` ${i + 1}. ${name},`
+      i++
     } while (i < line.length)
     st -= ','
     return st
