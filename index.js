@@ -19,7 +19,7 @@ function currentLine(line){
   if (line.length === 0){
     return 'The line is currently empty.'
   } else {
-    st = 'The line is currently:'
+    var st = 'The line is currently:'
     let i = 1
     do {
       st += ` ${i + 1}. ${name},`
