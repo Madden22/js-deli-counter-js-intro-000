@@ -22,7 +22,7 @@ function currentLine(line){
     var st = 'The line is currently:'
     let i = 1
     do {
-      st += ` ${i + 1}. ${name},`
+      st += ` ${i + 1}. ${line[i]},`
       i++
     } while (i < line.length)
     st -= ','
