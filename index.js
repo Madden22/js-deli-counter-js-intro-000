@@ -25,7 +25,7 @@ function currentLine(line){
       st += ` ${i + 1}. ${line[i]},`
       i++
     } while (i < line.length)
-    st -= ','
+    st = st.slice(0, -1)
     return st
   }
 }
