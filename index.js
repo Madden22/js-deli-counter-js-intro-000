@@ -1,10 +1,10 @@
-/*function takeANumber(line, name) {
+function takeANumber(line, name) {
   let i = 0
-  while (line[i] != name) {
+  while (line[i] != name and i < line.length) {
     i++
   }
   return `Welcome, ${name}. You are number ${i + 1} in line.`
-}*/
+}
 
 function nowServing(line) {
   if (line.length === 0) {
