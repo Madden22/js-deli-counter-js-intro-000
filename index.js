@@ -1,6 +1,6 @@
 function takeANumber(line, name) {
   let i = 0
-  while (line[i] != name and i < line.length) {
+  while (line[i] != name && i < line.length) {
     i++
   }
   return `Welcome, ${name}. You are number ${i + 1} in line.`
