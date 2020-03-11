@@ -3,7 +3,7 @@ function takeANumber(line, name) {
   while (line[i] != name && i < line.length + 1) {
     i++
   }
-  return `Welcome, ${name}. You are number ${i + 1} in line.`
+  return `Welcome, ${name}. You are number ${i} in line.`
 }
 
 function nowServing(line) {
